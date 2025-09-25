@@ -6,7 +6,7 @@ function generateDocs(path) {
 }
 
 const path = process.argv[2];
-if (path) {
+if (path && typeof path === 'string' && path.trim() !== '') {
     generateDocs(path);
 } else {
     console.error('Please provide a valid path.');
