@@ -6,4 +6,9 @@ function generateDocs(path) {
 }
 
 const path = process.argv[2];
-if (path) { generateDocs(path); } else { console.error('Please provide a valid path.'); }
+if (path) {
+    generateDocs(path);
+} else {
+    console.error('Please provide a valid path.');
+    process.exit(1); // Exit with an error code
+}
