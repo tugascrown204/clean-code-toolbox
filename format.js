@@ -7,4 +7,8 @@ function formatCode(path) {
 }
 
 const path = process.argv[2];
-if (path) { formatCode(path); } else { console.error('Please provide a valid path.'); }
+if (path) {
+    formatCode(path);
+} else {
+    console.error('Please provide a valid file path.');
+}
