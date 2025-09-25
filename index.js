@@ -3,7 +3,7 @@
 const { program } = require('commander');
 
 program
-  .version('1.2.0')
+  .version('1.2.1')
   .command('analyze <path>')
   .description('Run code analysis')
   .action((path) => {
