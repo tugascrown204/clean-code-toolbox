@@ -1,0 +1,19 @@
+{
+  "name": "clean-code-toolbox",
+  "version": "1.0.0",
+  "description": "A collection of tools and guidelines for clean code.",
+  "main": "index.js",
+  "scripts": {
+    "analyze": "node analyze.js",
+    "lint": "node lint.js",
+    "format": "node format.js",
+    "docs": "node docs.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1",
+    "jsdoc": "^3.6.6"
+  }
+}
