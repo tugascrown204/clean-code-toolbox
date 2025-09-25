@@ -15,7 +15,7 @@ if (path) {
         if (fs.existsSync(path)) {
             lintCode(path);
         } else {
-            console.error('File does not exist: ' + path);
+            console.error(`File does not exist: ${path}. Please check the path and try again.`);
         }
     } else {
         console.error('Please provide a valid path to a JavaScript file.');
