@@ -2,6 +2,7 @@
 
 function formatCode(path) {
     // Implement your formatting tool logic here
+    // This function formats the code located at the given path
     console.log(`Formatting the code at ${path}`);
 }
 
