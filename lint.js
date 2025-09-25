@@ -6,4 +6,13 @@ function lintCode(path) {
 }
 
 const path = process.argv[2];
-if (path) { lintCode(path); } else { console.error('Please provide a valid path.'); }
+if (path) {
+    // Check if the file has a valid JavaScript extension
+    if (path.endsWith('.js')) {
+        lintCode(path);
+    } else {
+        console.error('Please provide a valid path to a JavaScript file.');
+    }
+} else {
+    console.error('Please provide a valid path.');
+}
