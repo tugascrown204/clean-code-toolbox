@@ -27,6 +27,11 @@ program
   .action((path) => {
     // Documentation generation logic goes here
     console.log(`Generating documentation for code at ${path}`);
+  })
+  .command('help')
+  .description('Display help information')
+  .action(() => {
+    program.outputHelp();
   });
 
 program.parse(process.argv);
